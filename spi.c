@@ -71,6 +71,7 @@ void __attribute__((interrupt, no_auto_psv)) _SPI1Interrupt(void) {
             checksum = 0;
             // pet the dog
             spiTimeoutCount = 0;
+            // reset missed data counter (implement here)
             // state back to top
             spiState = START;
             break;
